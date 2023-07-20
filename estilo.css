@@ -1,0 +1,593 @@
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;400;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #dde1e9;
+}
+/* *********** */
+/* ENCABEZADO - MENU */
+/* *********** */
+.contiene_a_header{
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #1f283e;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    padding: 0 20px;
+}
+.contiene_a_header header{
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+}
+.texto_color{
+    color:#ff1133;
+}
+.contiene_a_header header nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.contiene_a_header header nav a:hover{
+    color: #ff1133;
+}
+.contiene_a_header header .links a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+    
+}
+.contiene_a_header header .links a:hover{
+    color: #ff1133;
+}
+.responsive-navegacion{
+    /*no olvidar cambiar a none*/
+    display: none;
+    font-size: 25px;
+ }
+ /* *********** */
+/* SECCIÓN INICIO */
+/* *********** */
+.section-inicio{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 1, 3, 0.5), rgba(0,0,0,.7)),url(img/puerta\ automatica.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+.section-inicio .div-inicio{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-inicio .informacion-inicio{
+    width:fit-content;
+    margin: auto;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.section-inicio .informacion-inicio h2{
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+.section-inicio .informacion-inicio p{
+    margin: 20px;
+    color: #797e8e;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.section-inicio .informacion-inicio .boton_desplazamiento{
+    width: 50px;
+    margin: auto;
+    height: 50px;
+    border: 2px solid #ff1133;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ff1133;
+    margin-top: 50px;
+    text-decoration: none;
+    
+}
+.boton_desplazamiento:hover{
+    animation: infinite;
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+.forma_trabajo{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-inicio .forma_trabajo .orden{
+    border-top: 2px solid #797e8e;
+    padding: 7px;
+    color: #dcdfea;
+    margin: 0 20px;
+}
+/* *********** */
+/* SECCION NOSOTROS */
+/* *********** */
+
+.section-nosotros{
+    max-width: 1100px;
+    margin: auto;
+    height: 75%;
+    background-color: #dde1e9;
+    padding: 100px 20px;
+    
+}
+.section-nosotros .filas{
+    display: flex;
+    align-items: center;
+}
+.section-nosotros .filas .columnas{
+    width: 50%;
+}
+.section-nosotros .filas .columnas img{
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.section-nosotros .filas .columnas .div-titulos{
+    display: flex;
+    align-items:center
+}
+.section-nosotros .filas .columnas .div-titulos .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.section-nosotros .filas .columnas .div-titulos .informacion-inicio{
+    margin-left: 30px;
+}
+.section-nosotros .filas .columnas .div-titulos .informacion-inicio .frase{
+    color: #ff1133;
+}
+.section-nosotros .filas .columnas .div-titulos .informacion-inicio h2{
+    font-size: 3rem;
+}
+.section-nosotros .filas .columnas p{
+   margin-bottom: 10px;
+   line-height: 28px;
+}
+.section-nosotros .filas .columnas .p-especial{
+    font-weight: bold;
+}
+.section-nosotros hr{
+    margin-bottom: 30px;
+}
+.section-nosotros .fila-nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-nosotros .fila-nosotros .frase{
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-nosotros .fila-nosotros h2{
+    font-size: 2.5rem;
+}
+.section-nosotros .fila-nosotros button{
+    background-color: #ff1133;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ********** */
+/* SERVICIOS */
+/* ********** */
+.imagen_servicios1{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+
+}
+.imagen_servicios2{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+
+}
+.imagen_servicios3{
+    height: 100%;
+    width: 80%;
+    border-radius: 10%;
+   
+
+}
+.section-servicios{
+    color: #fff;
+    position: relative;
+}
+.section-servicios .div-inicio{
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/PUERTA1-AUTOMATICAS-MANUSA-PORTADA-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    padding: 0 20px;
+}
+.section-servicios .div-inicio .filas{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+.section-servicios .div-inicio .filas .columnas{
+    width: 50%;
+}
+.section-servicios .div-inicio .filas .columnas img{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+.section-servicios .filas .columnas .div-titulos{
+    display: flex;
+    align-items: center;
+}
+.section-servicios .filas .columnas .div-titulos .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.section-servicios.fila .columnas .div-titulos .informacion-inicio{
+    margin-left: 30px;
+}
+.section-servicios .filas .columnas .div-titulos .informacion-inicio .frase{
+    color: #ff1133;
+}
+.section-servicios .filas .columnas .div-titulos .informacion-inicio h2{
+    font-size: 3rem;
+}
+.section-servicios .filas .columnas p{
+   margin-bottom: 10px;
+   line-height: 28px;
+}
+.section-servicios .filas .columnas .p-especial{
+    font-weight: bold;
+}
+.section-servicios .info-servicios{
+    max-width: 990px;
+    margin: auto;
+}
+.section-servicios .info-servicios table{
+    text-align: center;
+    background-color: #fff;
+    color: #1f283e;
+    border-collapse: collapse;
+    position: relative;
+    bottom: 100px;
+}
+.section-servicios .info-servicios table td{
+    padding: 30px;
+    border: 1px solid #dde1e9
+}
+.section-servicios .info-servicios table td i{
+    color: #ff1133;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+
+}
+.section-servicios .info-servicios h3{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section-servicios .info-servicios p{
+    line-height: 30px;
+}
+
+/* ********** */
+/* GALERIA */
+/* ********** */
+.section-galeria{
+    color: #fff;
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/puerta\ automatica.jpg);
+    background-size: cover;
+    background-position:center center;
+    padding: 100px 0;
+    background-size: cover;
+    background-position:center center;
+    padding: 100px 0;
+}
+.section-galeria .div-inicio{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.section-galeria .div-titulos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.section-galeria  .div-titulos .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.section-galeria .div-titulos .informacion-inicio{
+    margin-left: 30px;
+}
+.section-galeria .div-titulos .informacion-inicio .frase{
+    color: #ff1133;
+}
+.section-galeria .div-titulos .informacion-inicio h2{
+    font-size: 3rem;
+}
+.section-galeria .filas{
+    display:inline-block;
+    
+ }
+ .section-galeria .filas .columnas img{
+     width: 88%;
+    
+     display: block;
+ }
+ .imagen1{
+    padding: 3%;
+    height: 20%;
+    width: 20%;
+ }
+ .p-galeria{
+    
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.8px rgb(186, 60, 60);
+    
+ }
+ 
+/* *********** */
+/* CONTACTO */
+/* *********** */
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+.section-contacto{
+    color: #fff;
+    background:linear-gradient( rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)),url(img/puerta\ automatica.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+
+}
+.section-contacto .div-inicio{
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-contacto .div-titulos{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.section-contacto  .div-titulos .numero{
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+.section-contacto  .div-titulos .informacion-inicio{
+    margin-left: 30px;
+}
+.section-contacto  .div-titulos .informacion-inicio .frase{
+    color: #ff1133;
+}
+.section-contacto .div-titulos .informacion-inicio h2{
+    font-size: 3rem;
+}
+.section-contacto .filas{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.section-contacto .filas .columnas{
+    width: 48%;
+}
+.section-contacto .filas input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+.section-contacto textarea{
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+    height: 200px;
+}
+
+.section-contacto button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    background-color: #ff1133;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-contacto .fila-datos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+.section-contacto i{
+    color: #ff1133;
+    display: inline-block;
+    margin-right: 10px;
+}
+/* *********** */
+/* FOOTER */
+/* *********** */
+footer{
+    background-color: #151623;
+    padding: 30px 0;
+}
+footer .datos_extras{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+footer .datos_extras p{
+    color: #797e8e;
+}
+footer .datos_extras a{
+    text-decoration: none;
+    color: #797e8e;
+    display: inline-block;
+    margin: 0 15px;
+}
+/* *********** */
+/* RESPONSIVE */
+/* *********** */
+@media only screen and (max-width: 900px) {
+    header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+    header .liks{
+        display: none;
+    }
+    .responsive-navegacion{
+        display: block;
+    }
+    nav.responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:#151623;
+        z-index: 99;
+    }
+    nav.responsive a{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 30px;
+    }
+    .section-inicio .forma_trabajo{
+        display: none;
+    }
+    .nosotros .filas{
+        display: block;
+    }
+    .nosotros .filas .columnas{
+        width: 100%;
+        margin: auto;
+    }
+    .nosotros .filas .columnas img{
+        max-width: 200px;
+        display: block;
+        margin: auto;
+    }
+    .section-servicios .div-inicio .filas{
+        display: block;
+    }
+    .section-servicios .div-inicio .filas .columnas{
+       width: 100%;
+    }
+    
+    .section-contacto .filas{
+        display: block;
+    }
+    .section-contacto .filas .columnas{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .section-contacto .fila-datos{
+        display: block;
+    }
+    .section-contacto .fila-datos .columnas{
+        margin-bottom: 20px;
+    }
+    footer .datos_extras{
+        display: block;
+        text-align: center;
+    }
+    footer .datos_extras p{
+        margin-bottom: 10px;
+    }
+    }
